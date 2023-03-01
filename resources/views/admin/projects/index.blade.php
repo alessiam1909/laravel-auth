@@ -13,16 +13,16 @@
                   <p class="card-text">{{$project->content}}</p>
                 </div>
                 <div class="text-center">
-                    <a href="" class="btn btn-sm btn-square btn-warning">
+                    <a href="" class="btn btn-md btn-square btn-warning">
                         <i class="fa-solid fa-pen"></i>
                     </a>
-                    <a href="" class="btn btn-sm btn-square btn-success">
+                    <a href="" class="btn btn-md btn-square btn-success">
                         <i class="fa-solid fa-plus"></i>
                     </a>
                     <form action="" method="POST" class="d-inline-block">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-sm btn-danger btn-square">
+                        <button type="submit" class="btn btn-md btn-danger btn-square">
                             <i class="fa-solid fa-trash"></i>
                         </button>
                     </form>
