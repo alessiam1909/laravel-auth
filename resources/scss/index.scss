@@ -17,6 +17,7 @@
     background: #333;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
     height: 450px;
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
     width: 300px;
@@ -51,7 +52,8 @@
         transition: 0.5s ease-in-out;
 
         h2 {
-            color: #fff;
+            font-size: 25px;
+            color: #19a4b6;
             display: inline-block;
             font-weight: 300;
             margin-bottom: 5px;

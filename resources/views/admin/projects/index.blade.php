@@ -8,7 +8,7 @@
             @foreach ( $projects as $project )
           
                 <div class="cta m-2">
-                   <img src="https://picsum.photos/200/300" alt="">
+                   <img src="{{$project->image}}" alt="">
                    <div class="text">
                       <h2>{{$project->title}}</h2>
                       <p>{{$project->content}}</p>
@@ -29,6 +29,7 @@
                        </div>
                    </div>
                 </div>
+                
             @endforeach
         </div>
     </div>
