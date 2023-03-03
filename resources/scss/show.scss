@@ -32,7 +32,6 @@
     }
 
     .content-show {
-
         margin: 30px;
         align-items: center;
         height: 100px;
@@ -42,5 +41,11 @@
             margin: 30px;
             line-height: 10px;
         }
+
+        .contents-show {
+            width: 100%;
+            margin: 30px;
+        }
+
     }
 }

@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Project;
 use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
+use Illuminate\Support\Facades\Auth;
 
 class ProjectController extends Controller
 {
@@ -37,7 +38,11 @@ class ProjectController extends Controller
      */
     public function store(StoreProjectRequest $request)
     {
-        //
+        $form_data = $request->validated();
+        $slug = Project::createSlug($request->title, '-');
+        $form_data['slug'] = $slug;
+        $newProject = Project::create($form_data);
+        return redirect()->route('admin.projects.index');
     }
 
     /**

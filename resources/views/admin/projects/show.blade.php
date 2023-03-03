@@ -10,7 +10,7 @@
                 </div>
                 <div class="content-show text-center">
                   <div class="title-show">{{$project->slug}}</div>
-                  <p>{{$project->content}}</p>
+                  <p class="">{{$project->content}}</p>
                   <a href="{{route('admin.projects.edit', ['project' =>$project->slug])}}" class="btn btn-sm btn-square btn-warning">
                       <i class="fa-solid fa-pen"></i>
                   </a>

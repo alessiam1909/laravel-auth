@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="containeer">
+<div class="container">
     <div class="row">
         <div class="col-12">
             <h1 class="text-center"> Aggiungi nuovo progetto alla lista: </h1>
@@ -22,7 +22,7 @@
                 @csrf
                 <div class="mb-3 form-group">
                     <label for="title" class="control-label">Titolo: </label>
-                    <input type="text" class="form-control" id="title" name="title" placeholder="Inserisci il titolo del fumetto">
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Inserisci il titolo del progetto">
                 </div>
                 @error('title')
                     <div class="text-danger">{{$message}}</div>
